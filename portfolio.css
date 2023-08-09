@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(
+    rgb(228, 125, 125),
+    #00FFFF,
+    rgb(228, 125, 125)
+  );
+  overflow-x: hidden;
+  font-family: "Borel", cursive;
+  font-family: "Edu SA Beginner", cursive;
+}
+:root {
+  --bg-color1: antiquewhite;
+  --bg-color2: rgb(255, 255, 255);
+  --bg-color3: #007fd7;
+  --bg-color4: #00ffff;
+  --main-color: #007fd7;
+  --second-color: rgb(232, 221, 13);
+  --text-color: black;
+  --p-color: gray;
+
+  --big-font: 6rem;
+  --h1-font: 5rem;
+  --h2-font: 3rem;
+  --h3-font: 2rem;
+  --h4-font: 1.5rem;
+  --h5-font: 1rem;
+  --h5-font: 0.6rem;
+  --p-font: 1rem;
+}
+a {
+  text-decoration: none;
+  color: var(--normal-color);
+}
+
+/* header */
+
+header {
+  font-size: var(--h4-font);
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+header .logo {
+  width: 80px;
+}
+header .logo img {
+  width: 100%;
+}
+nav a {
+  color: var(--text-color);
+  font-weight: 700;
+  padding-inline: 20px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+nav a:hover {
+  font-size: 26px;
+  border-bottom: 3px solid white;
+}
+.menu-bar {
+  z-index: 1001;
+  display: none;
+  cursor: pointer;
+}
+
+/* hero section */
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 60px 15%;
+  transition: all 0.2s ease-in-out;
+}
+.hero-text h1 {
+  color: var(--text-color);
+  font-size: var(--h1-font);
+}
+.hero-text h1 span {
+  color: var(--main-color);
+  font-size: var(--big-font);
+}
+.hero-text h2 {
+  margin-left: 10px;
+  font-size: var(--h2-font);
+  color: var(--text-color);
+}
+.hero-text h4 {
+  color: var(--text-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: var(--main-color);
+  border-radius: 7px;
+  margin: 10px 10px;
+  font-size: var(--h4-font);
+  transition: all 0.3s;
+}
+.hero-text h4:last-child {
+  color: var(--text-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: var(--bg-color4);
+  border-radius: 7px;
+  margin: 10px 10px;
+  font-size: var(--h4-font);
+  transition: all 0.3s;
+}
+.hero-text h4:hover {
+  transform: translateX(6px);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+}
+.hero-text p {
+  font-weight: 700;
+  font-size: var(--h3-font);
+  color: aliceblue;
+  padding: 20px 10px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+.hero-img img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(3px 3px 3px var(--main-color));
+}
+
+/* about section */
+
+.about-me {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0px 15%;
+  transition: all 0.2s ease-in-out;
+}
+.about-me img {
+  width: 100%;
+  height: auto;
+  background: var(--bg-color3);
+  border-radius: 4px;
+}
+.about-me-textarea {
+  position: absolute;
+  height: 60%;
+  padding: 0px 5%;
+  width: 40%;
+  left: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color4);
+  border-radius: 10px;
+}
+.about-me h1 {
+  font-size: var(--h1-font);
+}
+.about-me p {
+  padding-block: 10px;
+  font-size: var(--h4-font);
+}
+
+/* skills section */
+
+.skills {
+  height: 400vh;
+}
+
+/* media quary */
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --big-font: 5.3rem;
+    --h1-font: 4.4rem;
+    --h2-font: 2.6rem;
+    --h3-font: 1.7rem;
+    --h4-font: 1.3rem;
+    --h5-font: 0.8rem;
+    --h5-font: 0.6rem;
+    --p-font: 0.8rem;
+  }
+  header {
+    padding: 10px 12%;
+  }
+  .hero {
+    padding: 0px 12%;
+  }
+  .about-me {
+    padding: 0px 12%;
+  }
+  .about-me-textarea {
+    padding: 0px 4%;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .hero {
+    grid-template-columns: 3fr 1fr;
+  }
+  header {
+    padding: 10px 10%;
+  }
+  .hero {
+    padding: 0px 10%;
+  }
+  .about-me {
+    padding: 0px 10%;
+  }
+  .about-me-textarea {
+    padding: 0px 3%;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  :root {
+    --big-font: 5rem;
+    --h1-font: 4rem;
+    --h2-font: 2.2rem;
+    --h3-font: 1.4rem;
+    --h4-font: 1.1rem;
+    --h5-font: 0.6rem;
+    --p-font: 0.7rem;
+  }
+  header {
+    padding: 10px 7%;
+  }
+  .hero {
+    padding: 0px 7%;
+  }
+  .about-me {
+    padding: 0px 7%;
+  }
+  .about-me-textarea {
+    padding: 0px 2%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -900%;
+    width: 100%;
+    right: 0%;
+    background: var(--main-color);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .nav a {
+    padding-block: 20px;
+  }
+  .navclk {
+    opacity: 1;
+    top: 85%;
+    right: 0%;
+  }
+  .menu-bar {
+    display: block;
+  }
+  header {
+    padding: 10px 4%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20% 5%;
+  }
+  .hero .hero-text {
+    text-align: center;
+  }
+  .hero img {
+    padding: 0px 15%;
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    padding: 0px 10%;
+  }
+  .about-me-textarea {
+    top: 90%;
+    width: 70%;
+    left: 15%;
+    height: auto;
+    text-align: center;
+  }
+}
