@@ -217,10 +217,10 @@ nav a:hover {
   transform: scale(1.1);
 }
 .skills .card-img {
-  height: 70%;
+  height: 50%;
 }
 .skills .card-img img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
