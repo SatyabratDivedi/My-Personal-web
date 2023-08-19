@@ -220,7 +220,7 @@ nav a:hover {
   height: 70%;
 }
 .skills .card-img img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
