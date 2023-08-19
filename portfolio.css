@@ -6,11 +6,7 @@
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(
-    rgb(228, 125, 125),
-    #adeaea,
-    rgb(228, 125, 125)
-  );
+  background: linear-gradient(rgb(228, 125, 125), #8ceaea, rgb(228, 125, 125));
   overflow-x: hidden;
   font-family: "Borel", cursive;
   font-family: "Edu SA Beginner", cursive;
@@ -24,6 +20,7 @@ body {
   --second-color: rgb(232, 221, 13);
   --text-color: black;
   --p-color: gray;
+  --text-color-main: #007fd7;
 
   --big-font: 6rem;
   --h1-font: 5rem;
@@ -165,6 +162,7 @@ nav a:hover {
   background: var(--bg-color3);
   border-radius: 4px;
 }
+
 .about-me-textarea {
   position: absolute;
   height: 60%;
@@ -180,6 +178,7 @@ nav a:hover {
 }
 .about-me h1 {
   font-size: var(--h1-font);
+  color: var(--text-color-main);
 }
 .about-me p {
   padding-block: 10px;
@@ -188,8 +187,233 @@ nav a:hover {
 
 /* skills section */
 
+.center-text {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0px 0px;
+  font-size: var(--big-font);
+  color: var(--text-color-main);
+}
 .skills {
-  height: 400vh;
+  color: var(--text-color);
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  row-gap: 0px;
+}
+.skills .card {
+  padding: 5px;
+  margin: 1px 5%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.skills .card img:hover {
+  transform: scale(1.1);
+}
+.skills .card-img {
+  height: 50%;
+}
+.skills .card-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.skills h3 {
+  margin-block: 10px;
+}
+.skills .stars {
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.1s ease-in-out;
+  font-size: larger;
+}
+.fa-solid {
+  transition: all 0.3s ease-in-out;
+}
+.fa-regular {
+  transition: all 0.3s ease-in-out;
+}
+.fa-solid:hover {
+  transform: scale(1.5);
+}
+.fa-regular:hover {
+  transform: scale(1.5);
+}
+
+/* projects section */
+
+.projects-center-text {
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  font-size: var(--h1-font);
+  color: var(--text-color-main);
+}
+.projects {
+  margin-inline: 10px;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects .card {
+  position: relative;
+  width: 300px;
+  height: 155px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: var(--bg-color2);
+  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.projects .card:hover {
+  border-radius: 30px;
+  height: 320px;
+}
+.projects .imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+}
+.projects .card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.projects .content {
+  text-align: center;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.projects .card:hover > .content {
+  opacity: 1;
+  transform: translateY(-170px);
+}
+
+.content h2 {
+  color: var(--text-color);
+}
+.content p {
+  margin-block: 10px;
+  color: var(--p-color);
+}
+.content button {
+  margin: 8px auto;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: var(--text-color-main);
+}
+
+/* contact-section */
+.contact-section {
+  text-align: center;
+  font-size: var(--h1-font);
+  color: var(--text-color-main);
+}
+
+.contact-para {
+  padding: 0px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-para .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left .left-img {
+  width: 80px;
+  height: auto;
+}
+.left .left-img img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+.left .left-img img:hover {
+ transform: translateX(10px);
+}
+
+.contact-para .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.first-para{
+  display: flex;
+  gap: 2%;
+}
+
+#contact #input {
+  border: none;
+  font-size: 20px;
+  width: 49%;
+  height: 30px;
+}
+#contact textarea {
+  font-size: 20px;
+  border: none;
+  margin: 4px;
+  height: 150px;
+  width: 100%;
+}
+#contact #submit {
+  border: none;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 6px;
+  background-color: aliceblue;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#contact #submit:hover {
+  border-radius: 15px;
+  color: aliceblue;
+  background: var(--main-color);
+  transform: scale(1.1);
+}
+.contact-para .icon{
+  width: 250px;
+  display: flex;
+  gap: 10px;
+}
+.contact-para .icon img{
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+.contact-para .icon img:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+.last {
+  height: 100vh;
 }
 
 /* media quary */
@@ -237,6 +461,23 @@ nav a:hover {
     padding: 0px 3%;
     width: 45%;
   }
+
+  .projects {
+    margin-top: 20%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .address-area {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .contact-section{
+    margin-top: 4%;
+  }
 }
 
 @media only screen and (max-width: 810px) {
@@ -262,6 +503,13 @@ nav a:hover {
     padding: 0px 2%;
     width: 50%;
   }
+  .contact-para {
+    flex-direction: column;
+  }
+  .contact-para .right {
+   padding: 20px 20%;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -313,4 +561,40 @@ nav a:hover {
     height: auto;
     text-align: center;
   }
+  .center-text {
+    padding: 18% 0px 0px;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .center-text {
+    padding: 33% 0px 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  :root {
+    --big-font: 4.5rem;
+    --h1-font: 3.5rem;
+    --h2-font: 2rem;
+    --h3-font: 1.1rem;
+    --h4-font: 1rem;
+    --h5-font: 0.5rem;
+    --p-font: 0.6rem;
+  }
+  .center-text {
+    padding: 50% 0px 0px;
+  }
+  .contact-para .right {
+    padding: 20px 10%;
+   }
+}
+@media only screen and (max-width: 350px) {
+  .center-text {
+    padding: 95% 0px 0px;
+  }
+  .contact-para .right {
+    padding: 20px 5%;
+   }
+}
+
+/* skills section */
