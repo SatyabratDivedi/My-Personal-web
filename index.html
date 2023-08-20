@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -37,7 +38,11 @@
     <section id="home" class="hero">
         <div class="hero-text">
             <h2>I' am</h2>
-            <h1><span>S</span>atyabrat Divedi</h1>
+            <h1 class="ml6">
+                <span class="text-wrapper">
+                    <span class="letters">Satyabrat Divedi</span>
+                </span>
+            </h1>
             <p>Frontend Web Devloper</p>
             <h4>MY CV</h4>
             <h4>Hire Me</h4>
@@ -182,10 +187,12 @@
                 <h3>Gorakhpur, Uttar Pradesh</h3>
                 <h3>India</h3>
                 <div class="icon">
-                  <a href="https://github.com/SatyabratDivedi" target="_blank"><img src="img/github.png" alt=""></a>
-                  <a href="https://www.linkedin.com/in/satyabrat-divedi-a3555a183/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-                  <a href="https://twitter.com/Satyabratd5605" target="_blank"><img src="img/twitter.png" alt=""></a>
-                  <a href="https://www.instagram.com/satyabratdivedi/" target="_blank"><img src="img/instagram.png" alt=""></a>
+                    <a href="https://github.com/SatyabratDivedi" target="_blank"><img src="img/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/satyabrat-divedi-a3555a183/" target="_blank"><img
+                            src="img/linkedin.png" alt=""></a>
+                    <a href="https://twitter.com/Satyabratd5605" target="_blank"><img src="img/twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com/satyabratdivedi/" target="_blank"><img src="img/instagram.png"
+                            alt=""></a>
                 </div>
             </div>
             <form class="right">
@@ -205,15 +212,7 @@
 
 
 
-    <script>
-
-        function clickit() {
-            var a = document.getElementById("nav")
-            a.classList.toggle(".nav")
-            a.classList.toggle("navclk")
-        }
-
-    </script>
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
