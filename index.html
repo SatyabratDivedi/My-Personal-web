@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+  
+    <link rel="stylesheet" href="boxicons.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="portfolio.css">
@@ -18,34 +24,39 @@
 
 <body>
     <header>
-        <div class="logo">
+       <a href="#home" class="logo">
             <img src="img/logo-pic.jpeg" alt="">
-        </div>
+        </a>
         <nav class="nav" id="nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#contactme">Contact</a>
         </nav>
-        <div class="menu-bar" onclick="clickit()">
-            <i class="fa-solid fa-bars"></i>
+        <div class="allbx">
+            <div class="menu-bar">
+                <i class='bx bx-menu' id="menu-bar"></i>
+            </div>
+            <div class="dark">
+                <i class='bx bxs-moon' id="darkmode"></i>
+            </div>
         </div>
     </header>
 
     <!-- hero section -->
-
-    <section id="home" class="hero">
+    <div id="home" style="height: 20px;"></div>
+    <section class="hero">
         <div class="hero-text">
             <h2>I' am</h2>
-            <h1 class="ml6">
+            <h1 class="flying-letter">
                 <span class="text-wrapper">
                     <span class="letters">Satyabrat Divedi</span>
                 </span>
             </h1>
             <p>Frontend Web Devloper</p>
             <h4>MY CV</h4>
-            <h4>Hire Me</h4>
+            <h4 >Hire Me</h4>
         </div>
 
         <div class="hero-img">
@@ -56,8 +67,8 @@
 
     <!-- about section -->
 
-
-    <section id="about" class="about-me">
+    <div id="about" style="height: 110px;"></div>
+    <section class="about-me">
         <div class="about-me-img">
             <img src="img/pic2.png" alt="">
         </div>
@@ -70,7 +81,8 @@
     </section>
 
     <!-- skills section  -->
-    <section class="center-text" id="skills">
+    <div id="skills" style="height: 100px;"></div>
+    <section class="center-text">
         <span>My Skills</span>
     </section>
     <section class="skills" id="skills">
@@ -119,7 +131,8 @@
 
 
     <!-- projects section -->
-    <section class="projects-center-text" id="projects">
+    <div id="projects" style="height: 100px;"></div>
+    <section class="projects-center-text">
         <span>Some Projects</span>
     </section>
 
@@ -174,7 +187,7 @@
 
 
     <!-- contact-section -->
-
+    <div id="contactme" style="height: 100px;"></div>
     <section id="contact">
 
         <h1 class="contact-section">Contact Me</h1>
