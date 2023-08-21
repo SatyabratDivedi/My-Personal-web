@@ -143,7 +143,7 @@ nav a:hover {
   word-wrap: none;
   word-wrap:break-word;
 }
-.hero-text h4 {
+.hero-text a {
   color: var(--text-color);
   display: inline-block;
   padding: 10px 20px;
@@ -155,11 +155,11 @@ nav a:hover {
   transition: all 0.3s;
   cursor: pointer;
 }
-.hero-text h4:last-child {
+.hero-text a:last-child {
   color: var(--text-color);
   background: var(--bg-color4);
 }
-.hero-text h4:hover {
+.hero-text a:hover {
   transform: translateX(6px);
   background-color: transparent;
   border: 1px solid var(--main-color);
