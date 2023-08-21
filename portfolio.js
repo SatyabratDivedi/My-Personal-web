@@ -26,23 +26,23 @@ darkmode.onclick = () => {
 
 
 
-var textWrapper = document.querySelector(".flying-letter .letters");
+var textWrapper = document.querySelector(".flying-letters .letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
-  "<span class='letter'>$&</span>"
+  "<span class='letters'>$&</span>"
 );
 
 anime
   .timeline({ loop: true })
   .add({
-    targets: ".flying-letter .letter",
+    targets: ".flying-letters .letters",
     translateY: ["1.1em", 0],
     translateZ: 0,
     duration: 750,
     delay: (el, i) => 50 * i,
   })
   .add({
-    targets: ".flying-letter",
+    targets: ".flying-letters",
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
