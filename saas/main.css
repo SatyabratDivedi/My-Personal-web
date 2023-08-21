@@ -7,7 +7,11 @@
 }
 
 body {
-  background: linear-gradient(var(--main-bg-col-1), var(--main-bg-col-2), var(--main-bg-col-1));
+  background: linear-gradient(
+    var(--main-bg-col-1),
+    var(--main-bg-col-2),
+    var(--main-bg-col-1)
+  );
   overflow-x: hidden;
   font-family: "Borel", cursive;
   font-family: "Edu SA Beginner", cursive;
@@ -752,4 +756,4 @@ body.dark {
   --text-color: rgb(221, 215, 215);
   --p-color: gray;
   --text-color-main: #007fd7;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
