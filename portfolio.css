@@ -225,7 +225,6 @@ nav a:hover {
 .center-text {
   display: flex;
   justify-content: center;
-  padding: 1% 0px 0px;
   font-size: var(--big-font);
   color: var(--text-color-main);
 }
@@ -286,7 +285,7 @@ nav a:hover {
 /* projects section */
 
 .projects-center-text {
-  margin: 50px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
   display: flex;
   justify-content: center;
   font-size: var(--h1-font);
@@ -643,7 +642,7 @@ footer {
   }
   .hero {
     grid-template-columns: 1fr;
-    padding: 20% 5%;
+    padding-top:20%;
   }
   .hero .hero-text {
     text-align: center;
@@ -663,13 +662,13 @@ footer {
     text-align: center;
   }
   .center-text {
-    padding: 18% 0px 0px;
+    padding: 9% 0px 0px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .center-text {
-    padding: 33% 0px 0px;
+    padding: 10% 0px 0px;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -686,7 +685,7 @@ footer {
     --p-font: 0.6rem;
   }
   .center-text {
-    padding: 50% 0px 0px;
+    padding: 25% 0px 0px;
   }
   .contact-para .right {
     padding: 20px 10%;
@@ -698,7 +697,7 @@ footer {
     --h1-font: 3.1rem;
   }
   .center-text {
-    padding: 95% 0px 0px;
+    padding: 40% 0px 0px;
   }
   .contact-para .right {
     padding: 20px 5%;
