@@ -543,7 +543,7 @@ nav a:hover {
 }
 
 footer {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   height: 60px;
   color: var(--text-color-main);
@@ -552,7 +552,6 @@ footer {
   align-items: center;
   font-size: var(--h3-font);
   background: var(--main-bg-col-2);
-  border-radius: 50px;
 }
 
 /* media quary */
