@@ -239,7 +239,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   font-size: var(--big-font);
-  color: var(--text-color-main);
+  color: var(--text-color);
 }
 
 .skills {
