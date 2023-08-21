@@ -1,8 +1,3 @@
-// function clickit() {
-//   var a = document.getElementById("nav");
-//   a.classList.toggle(".nav");
-//   a.classList.toggle("navclk");
-// }
 
 var menu = document.querySelector("#menu-bar");
 var navclk = document.querySelector("#nav");

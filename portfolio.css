@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -7,7 +6,11 @@
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient( var(--main-bg-col-1), var(--main-bg-col-2), var(--main-bg-col-1) );
+  background: linear-gradient(
+    var(--main-bg-col-1),
+    var(--main-bg-col-2),
+    var(--main-bg-col-1)
+  );
   overflow-x: hidden;
   font-family: "Borel", cursive;
   font-family: "Edu SA Beginner", cursive;
@@ -52,7 +55,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15%;
-background: var(--main-bg-col-1);
+  background: var(--main-bg-col-1);
   transition: all 0.2s ease-in-out;
 }
 
@@ -82,7 +85,7 @@ nav a:hover {
   cursor: pointer;
   font-size: xx-large;
 }
-.allbx{
+.allbx {
   display: flex;
   margin-right: 10px;
 }
@@ -91,7 +94,6 @@ nav a:hover {
   font-size: xx-large;
   margin-inline: 5px;
 }
-
 
 /* hero section */
 
@@ -182,7 +184,7 @@ nav a:hover {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center; 
+  align-items: center;
   padding: 0px 15%;
   transition: all 0.2s ease-in-out;
 }
@@ -387,6 +389,58 @@ nav a:hover {
   transform: translateX(10px);
 }
 
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  height: 80%;
+  border: 1px solid #ddd;
+}
+
+.card-back {
+  height: 80%;
+  background-image: url(img/pic3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position-x: 50%;
+  border: 1px solid #ddd;
+  transform: rotateY(180deg);
+}
+
 .contact-para .right {
   display: flex;
   flex-direction: column;
@@ -436,14 +490,22 @@ nav a:hover {
   display: flex;
   gap: 10px;
 }
-
 .contact-para .icon img {
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-para .icon img:hover {
   transform: scale(1.2);
+}
+footer {
+  width: 100%;
+  height: 60px;
+  color: var(--text-color-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h3-font);
+  background: var(--main-bg-col-1);
 }
 
 .last {
@@ -628,14 +690,14 @@ nav a:hover {
   .contact-para .right {
     padding: 20px 5%;
   }
-  .hero{
-    padding-top:25% ;
+  .hero {
+    padding-top: 25%;
   }
 }
 
 /* dark mode */
 
-body.dark{
+body.dark {
   --main-bg-col-1: rgb(63, 62, 62);
   --main-bg-col-2: #070808;
   --bg-color1: rgb(2, 2, 2);
@@ -647,5 +709,4 @@ body.dark{
   --text-color: rgb(221, 215, 215);
   --p-color: gray;
   --text-color-main: #007fd7;
-
 }
