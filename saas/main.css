@@ -225,12 +225,13 @@ nav a:hover {
 }
 
 .about-me h1 {
-  font-size: var(--h1-font);
+  font-size: var(--h2-font);
 }
 
 .about-me p {
   padding-block: 10px;
-  font-size: var(--h4-font);
+  font-size: var(--p-font);
+  font-weight: 900;
   color: var(--text-color);
 }
 
@@ -430,21 +431,25 @@ nav a:hover {
   display: flex;
   gap: 20px;
 }
+
 .middle .card {
   width: 200px;
   height: 300px;
   position: relative;
   cursor: pointer;
 }
+
 .middle .card-inner {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
 }
+
 .middle .card:hover .card-inner {
   transform: rotateY(180deg);
 }
+
 .middle .card-front,
 .middle .card-back {
   width: 100%;
@@ -452,6 +457,7 @@ nav a:hover {
   position: absolute;
   backface-visibility: hidden;
 }
+
 .middle .card-front {
   background-color: #f2f2f2;
   display: flex;
@@ -461,6 +467,7 @@ nav a:hover {
   height: 80%;
   border: 1px solid #ddd;
 }
+
 .middle .card-back {
   height: 80%;
   background-image: url(/My-Personal-web/img/pic3.png);
