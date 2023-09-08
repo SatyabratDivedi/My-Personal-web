@@ -22,23 +22,6 @@ darkmode.onclick = () => {
   }
 };
 
-const sr = ScrollReveal ({
-  distance: "200px",
-  duration: 1000,
-  delay: 10,
-  reset: true
-});
-
-sr.reveal(".hero-text",{origin:"left"});
-sr.reveal(".hero-img",{origin:"right"});
-sr.reveal(".about-me-img",{origin:"right"});
-sr.reveal(".about-me-textarea",{origin:"left"});
-sr.reveal(".center-text",{origin:"bottom"});
-sr.reveal(".card",{origin:"bottom"});
-sr.reveal(".projects-center-text",{origin:"bottom"});
-
-
-
 var textWrapper = document.querySelector(".flying-letters .letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(
   /\S/g,
