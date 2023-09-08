@@ -432,7 +432,7 @@ nav a:hover {
   gap: 20px;
 }
 
-.middle .card {
+.middle .con-card {
   width: 200px;
   height: 300px;
   position: relative;
@@ -446,7 +446,7 @@ nav a:hover {
   transition: transform 0.5s;
 }
 
-.middle .card:hover .card-inner {
+.middle .con-card:hover .card-inner {
   transform: rotateY(180deg);
 }
 

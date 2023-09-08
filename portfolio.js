@@ -11,18 +11,31 @@ window.onscroll = () => {
   navclk.classList.remove("navclk");
 };
 
-var darrkmode = document.querySelector('#darkmode')
+var darrkmode = document.querySelector("#darkmode");
 darkmode.onclick = () => {
-  if(darkmode.classList.contains('bxs-moon')){
-    darkmode.classList.replace('bxs-moon', 'bx-sun')
-    document.body.classList.add('dark');
-  }
-  else{
-    darkmode.classList.replace('bx-sun', 'bxs-moon')
-    document.body.classList.remove('dark');
+  if (darkmode.classList.contains("bxs-moon")) {
+    darkmode.classList.replace("bxs-moon", "bx-sun");
+    document.body.classList.add("dark");
+  } else {
+    darkmode.classList.replace("bx-sun", "bxs-moon");
+    document.body.classList.remove("dark");
   }
 };
 
+const sr = ScrollReveal ({
+  distance: "200px",
+  duration: 1000,
+  delay: 10,
+  reset: true
+});
+
+sr.reveal(".hero-text",{origin:"left"});
+sr.reveal(".hero-img",{origin:"right"});
+sr.reveal(".about-me-img",{origin:"right"});
+sr.reveal(".about-me-textarea",{origin:"left"});
+sr.reveal(".center-text",{origin:"bottom"});
+sr.reveal(".card",{origin:"bottom"});
+sr.reveal(".projects-center-text",{origin:"bottom"});
 
 
 
