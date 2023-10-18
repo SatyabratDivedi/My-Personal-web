@@ -44,3 +44,4 @@ anime
     easing: "easeOutExpo",
     delay: 1000,
   });
+
